@@ -1,0 +1,147 @@
+/* ---- nav bar --*/
+
+.navbar-brand {
+    color:crimson;
+}
+
+/* -- main homescreen div -- */
+
+.upperdiv {
+    background-color: rgb(244,54,76);
+    width: 90%;
+    height: 400px;
+    opacity: 1;
+    margin: 20px 0 0 75px ;
+    border-radius: 30px;
+}
+
+
+.offerdiv {
+    background-color: rgb(231, 240, 240);
+    width: 70%;
+    height: 280px;
+    margin: 80px 0 0 190px; 
+    border-radius: 30px; 
+    display: block;
+}
+
+/*--- Goverment bus --- */
+
+.goverment {
+    margin: 300px 0 0 0; 
+    background-color: rgb(250, 240, 241);
+    height: 500px; 
+   
+}
+
+.uppersection {
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.uppersection h1 {
+    margin:20px 0 0 30px;
+}
+
+.middlepart {
+    display: flex;
+    /* margin: 0 50px 0 0; */
+}
+.middlesection {
+    width: 450px;
+    height: 270px;
+    background-color: rgb(182, 238, 238);
+    margin: 50px 0 0 40px;
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.src1 {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 50%;   
+}
+
+.middlesection h1 {
+   margin: 20px 0 0 5px;
+}
+.middlesection button {
+    margin: 150px 0 0 -20px ;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.middlesection button:hover {
+    background-color: rgb(248, 137, 159);
+}
+
+/*-- <!-- 3rd section of railways --> --*/
+
+.upperbirth {
+    display: flex;
+}
+
+.upperbirth h1 {
+    margin: 50px 0 0 100px;
+}
+
+.rail {
+    margin: 0 0 0 300px;
+}
+
+
+/* <!-- 4th section --> */
+
+.appsetup {
+    background-color: rgb(244,54,76);
+    width: 90%;
+    height: 400px;
+    opacity: 1;
+    margin: 20px 0 0 75px ;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(247, 124, 124, 0.75);
+}
+
+.quickaccess {
+    width: 380px;
+    height: 280px;
+    background-color: aliceblue;
+    margin: 30px 0 0 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+}
+
+.barcode {
+    height: 150px;
+    width: 150px;
+    margin: 50px 0 0 110px;
+}
+
+/* --5th section -- */
+
+.scrollbar {
+    width: 80%;
+    height: 400px;
+    margin: 80px 0 0 150px;
+}
+
+
+/*--- Footer section ---*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    color: black;
+}
+
+.footer-div {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(244, 244, 230);
+}
+
+
