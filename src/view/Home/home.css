@@ -1,0 +1,274 @@
+/* ==== General Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ==== Navbar ==== */
+.navbar-brand {
+    color: crimson;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ==== Main Container ==== */
+/* Optional Container for Content Alignment */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* ==== Hero Section ==== */
+.upperdiv {
+    background-color: rgb(244, 54, 76);
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upperdiv h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.onerow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="search"], input[type="date"], button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+input[type="search"] {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 5px;
+}
+
+input[type="date"] {
+    flex: 1;
+    max-width: 200px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+#butn {
+    width: 100px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* ==== Offers Section ==== */
+.offerdiv {
+    background-color: rgb(231, 240, 240);
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offerdiv h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(242, 155, 172);
+}
+
+.card {
+    display: inline-block;
+    margin: 0 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ==== Government Buses Section ==== */
+.goverment {
+    background-color: rgb(250, 240, 241);
+    width: 90%;
+    padding: 30px 20px;
+    margin: 40px auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.uppersection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.uppersection h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.middlepart {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.middlesection {
+    background-color: rgb(182, 238, 238);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.middlesection:hover {
+    transform: translateY(-5px);
+}
+
+.src1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.middlesection h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.middlesection button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.middlesection button:hover {
+    background-color: #218838;
+}
+
+/* ==== Rail Section ==== */
+.upperbirth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.upperbirth h1 {
+    font-size: 26px;
+    width: 60%;
+    font-weight: bold;
+}
+
+.rail img {
+    max-width: 300px;
+    border-radius: 15px;
+    margin-right: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== App Setup Section ==== */
+.appsetup {
+    background-color: rgb(244, 54, 76);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.quickaccess {
+    display: inline-block;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.barcode {
+    width: 150px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== FAQs Section ==== */
+.scrollbar {
+    background-color: white;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scrollbar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ==== Footer ==== */
+.footer-div {
+    background-color: rgb(244, 244, 230);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+}

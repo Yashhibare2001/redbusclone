@@ -1,0 +1,70 @@
+
+.common {
+    display: flex;
+    justify-content: center; /* Align items horizontally to the center */
+    gap: 30px; /* Add space between the cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    padding: 50px 20px;
+}
+
+/* Individual card styling */
+.buscard {
+    width: 18rem; /* Maintain consistent card width */
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures content stays within card bounds */
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
+}
+
+.buscard:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for hover */
+}
+
+/* Image styling */
+.card-img-top {
+    width: 100%;
+    height: 12rem; /* Fixed height for a uniform look */
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Card content styling */
+.card-body {
+    padding: 15px;
+    text-align: center; /* Center the text for cleaner alignment */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: rgb(99, 99, 99);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Button styling */
+.btn {
+    background-color: #ff6b6b; /* Eye-catching button color */
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4757; /* Slightly darker shade for hover effect */
+    transform: translateY(-2px); 
+}
+
