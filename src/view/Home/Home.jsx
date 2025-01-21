@@ -1,5 +1,6 @@
 import React from "react";
 import './home.css';
+import { Link } from "react-router-dom";
 import train from './assest/train.webp';
 import offer1 from './assest/offer tag 1.jpeg';
 import offer2 from './assest/offer tag 2.jpeg';

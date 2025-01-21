@@ -1,70 +1,130 @@
-
-.common {
-    display: flex;
-    justify-content: center; /* Align items horizontally to the center */
-    gap: 30px; /* Add space between the cards */
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    padding: 50px 20px;
+/* Main container */
+.container {
+    max-width: 1500px; 
+    margin: 50px auto;
+    background-color: #eedddf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual card styling */
+/* Flex layout for cards */
+/* .common {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    padding: 20px 0;
+} */
+
+/* Card styling */
 .buscard {
-    width: 18rem; /* Maintain consistent card width */
-    margin: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    overflow: hidden; /* Ensures content stays within card bounds */
+    flex: 1 1 calc(25% - 30px); /* Responsive card size, maintain gaps */
+    max-width: 300px; /* Prevent cards from growing too large */
+    margin: 10px; /* Add space around individual cards */
     background-color: #ffffff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
+    border-radius: 10px;
+    overflow: hidden; /* Prevent content overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .buscard:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for hover */
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Image styling */
+
 .card-img-top {
-    width: 100%;
-    height: 12rem; /* Fixed height for a uniform look */
-    object-fit: cover; /* Ensures the image fits nicely */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 10px 0;
+    border-radius: 20px;
 }
 
-/* Card content styling */
+#imgi {
+    width: 320px;
+    height: 200PX; 
+}
+/* Card content */
 .card-body {
     padding: 15px;
-    text-align: center; /* Center the text for cleaner alignment */
+    text-align: center;
 }
 
+.card {
+    margin: 20px 20px 20px 70px; 
+}
+
+/* Title styling */
 .card-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(66, 66, 66);
+    color: #d6df1c;
     margin-bottom: 10px;
 }
 
+.topTemp {
+    text-align: center;
+}
+
+/* Description text styling */
 .card-text {
     font-size: 0.95rem;
-    color: rgb(99, 99, 99);
+    color: #666666;
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
 /* Button styling */
-.btn {
-    background-color: #ff6b6b; /* Eye-catching button color */
+button {
+    background-color: #ff6b6b;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-size: 0.9rem;
     color: #ffffff;
     border-radius: 5px;
     text-transform: uppercase;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #ff4757; /* Slightly darker shade for hover effect */
-    transform: translateY(-2px); 
+button:hover {
+    background-color: #c279f6;
+    transform: translateY(-2px);
 }
 
+/* Responsive design */
+@media (max-width: 1024px) {
+    .buscard {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    }
+
+    .common {
+        gap: 20px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .buscard {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .buscard {
+        flex: 1 1 calc(100% - 10px); /* 1 card per row on small screens */
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+}
