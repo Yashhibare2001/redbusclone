@@ -5,7 +5,7 @@ const Customer = () => {
     const params = useParams();
     return (
         <div>
-           <a href="./Buses">Buses</a>
+           <a href="">Buses</a>
         </div>
     )
 };

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Busbooking = (buslist) => {         //functional component that accepts the products data passed to it
 
     //custom method, called from the view in the Render()  below
@@ -26,6 +27,7 @@ const Busbooking = (buslist) => {         //functional component that accepts th
                             </div>
 
                             <button>Check</button>
+                            
                         </div>
                     </div>
                 )
