@@ -5,7 +5,7 @@ const Ticket = ()=> {
     return(
         <div>
             <li className="nav-item">
-                        <Link to="/Busbk" className="nav-link" href="#">Tickets</Link>
+                        <Link to="/Busbk" className="nav-link" href="./Passinfo">Tickets</Link>
                         </li>
         </div>
     )

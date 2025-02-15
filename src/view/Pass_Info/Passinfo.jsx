@@ -1,7 +1,10 @@
 import React from "react";
 import './passinfo.css';
+import { useNavigate } from "react-router-dom";
 
 const Passinfo = () => {
+    const navigate = useNavigate(); // Hook for navigation
+    
     return (
         <div>
             <div className="container">
